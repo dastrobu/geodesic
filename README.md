@@ -50,4 +50,9 @@ is employed, but different parameters can be specified, e.g. for the
              ellipsoid (a: 6378137.0, f: 1/298.257222100882711))
 
 
+## Known Issues
+
+ * Compilation with gcc on Linux does not work. `swift build` fails. 
+ No problems with clang on Linux. 
+ 
 
