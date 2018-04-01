@@ -79,9 +79,12 @@ final class GeodesicTests: XCTestCase {
         XCTAssertEqual(distance(x, y), 111319.491, accuracy: delta)
     }
 
+#if !os(macOS)
     static var allTests = [
-        ("testShortcutForEqualPoints", testShortcutForEqualPoints),
-        ("testPoles", testPoles),
+        ("testDistance", testDistance),
         ("testGrs80", testGrs80),
+        ("testPoles", testPoles),
+        ("testShortcutForEqualPoints", testShortcutForEqualPoints),
     ]
+#endif
 }

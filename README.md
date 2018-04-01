@@ -1,5 +1,9 @@
 # geodesic
 
+[![Swift Version](https://img.shields.io/badge/swift-4.1-blue.svg)](https://swift.org) 
+![Platform](https://img.shields.io/badge/platform-osx--64|linux--64-lightgrey.svg)
+[![Build Travis-CI Status](https://travis-ci.org/dastrobu/geodesic.png?branch=master)](https://travis-ci.org/dastrobu/geodesic) 
+
 Solver for the inverse geodesic problem in Swift.
 
 The inverse geodesic problem must be solved to compute the distance between two points on an oblate spheroid, or 
@@ -46,4 +50,9 @@ is employed, but different parameters can be specified, e.g. for the
              ellipsoid (a: 6378137.0, f: 1/298.257222100882711))
 
 
+## Known Issues
+
+ * Compilation with gcc on Linux does not work. `swift build` fails. 
+ No problems with clang on Linux. 
+ 
 
