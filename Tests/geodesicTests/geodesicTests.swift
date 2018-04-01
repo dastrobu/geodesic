@@ -38,7 +38,7 @@ final class GeodesicTests: XCTestCase {
     }
 
     func testDistance() {
-        let delta = 1e-10
+        let delta = 1e-3
         var x: (lat: Double, lon: Double), y: (lat: Double, lon: Double)
 
         x = (lat: 0.asRad, lon: 0.asRad)
