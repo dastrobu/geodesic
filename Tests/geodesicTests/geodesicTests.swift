@@ -74,8 +74,6 @@ final class GeodesicTests: XCTestCase {
 #if !os(macOS)
     static var allTests = [
         ("testDistance", testDistance),
-        ("testGrs80", testGrs80),
-        ("testPoles", testPoles),
         ("testShortcutForEqualPoints", testShortcutForEqualPoints),
     ]
 #endif
