@@ -80,8 +80,9 @@ final class GeodesicTests: XCTestCase {
     }
 
     static var allTests = [
-        ("testShortcutForEqualPoints", testShortcutForEqualPoints),
-        ("testPoles", testPoles),
+        ("testDistance", testDistance),
         ("testGrs80", testGrs80),
+        ("testPoles", testPoles),
+        ("testShortcutForEqualPoints", testShortcutForEqualPoints),
     ]
 }
