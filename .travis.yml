@@ -39,6 +39,8 @@ before_install:
       export PATH=$SWIFT_HOME:$PATH
       # check swift version
       swift --version
+      # fix linker issue: https://bugs.swift.org/browse/SR-2299
+      sudo ln -sf ld.gold /usr/bin/ld
     fi
 script:
   - swift build
