@@ -29,14 +29,7 @@ final class GeodesicTests: XCTestCase {
         XCTAssertEqual(distance(zero, (lat: 0.0, lon: 0.0)), 0.0)
     }
 
-    func testPoles() {
-        XCTAssertNoThrow(distance((lat: pi / 2, lon: 0), (lat: -pi / 2, lon: 0)))
-    }
-
-    func testGrs80() {
-        XCTAssertNoThrow(distance((lat: pi / 2, lon: 0), (lat: -pi / 2, lon: 0), ellipsoid: grs80))
-    }
-
+    /// some simple tests to make sure the results are in the right ballpark.
     func testDistance() {
         let delta = 1e-3
         var x: (lat: Double, lon: Double), y: (lat: Double, lon: Double)
@@ -47,7 +40,6 @@ final class GeodesicTests: XCTestCase {
 
         x = (lat: 0.asRad, lon: 0.asRad)
         y = (lat: 1.asRad, lon: 0.asRad)
-        XCTAssertEqual(distance(x, y), 110574.389, accuracy: delta)
         XCTAssert(abs(distance(x, y) - 110574.389) < delta)
 
         x = (lat: 0.asRad, lon: 0.asRad)
