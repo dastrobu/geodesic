@@ -32,7 +32,7 @@ Alternatively one can employ the package
 [vincenty](https://github.com/dastrobu/vincenty) 
 which is a much simpler solver for the inverse geodesic problem, completely written in 
 Swift. Vincenty's formulae does, however, have some convergence problems in rare 
-cases, an may not give the same accuracy as Karney's algorithm. 
+cases and may not give the same accuracy as Karney's algorithm. 
 
 ## Convergence and Tolerance
 
