@@ -2,7 +2,7 @@
 sudo: required
 # do not use swift as language, since otherwise the build always runs on a macOS VM.
 language: generic
-dist: trusty # Ubuntu 14.04 LTS
+dist: bionic # Ubuntu 18.04
 osx_image: xcode11.2
 
 compiler:
