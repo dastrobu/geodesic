@@ -3,6 +3,7 @@
 [![Swift Version](https://img.shields.io/badge/swift-5.1-blue.svg)](https://swift.org) 
 ![Platform](https://img.shields.io/badge/platform-osx--64|linux--64-lightgrey.svg)
 [![Build Travis-CI Status](https://travis-ci.org/dastrobu/geodesic.svg?branch=master)](https://travis-ci.org/dastrobu/geodesic) 
+[![Swift Version](https://img.shields.io/badge/GeographicLib-1.50.1-blue.svg)](https://geographiclib.sourceforge.io/) 
 
 Solver for the inverse geodesic problem in Swift.
 
@@ -24,8 +25,8 @@ and that's it.
 ## Implementation Details
 
 This Swift package is a wrapper for the 
-[C library for Geodesics 1.49](https://geographiclib.sourceforge.io/html/C/).
-The author of this library is Charles F. F. Karney (charles@karney.com). 
+[C library for Geodesics](https://geographiclib.sourceforge.io/html/C/).
+The author of this library is Charles Karney (charles@karney.com). 
 The goal of this Swift package is to make some algorithms from 
 [GeographicLib](https://geographiclib.sourceforge.io/) available to the Swift world.
 Alternatively one can employ the package 
