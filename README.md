@@ -22,6 +22,17 @@ Here is an example to compute the distance between two points (the poles in this
     
 and that's it. 
 
+## Installation
+
+At least `clang-3.6` is required. On linux one might need to install it explicitly.
+There are no dependencies on macOS.
+    
+### Swift Package Manager
+
+    dependencies: [
+            .package(url: "https://github.com/dastrobu/geodesic.git", from: "1.1.0"),
+        ],
+
 ## Implementation Details
 
 This Swift package is a wrapper for the 
