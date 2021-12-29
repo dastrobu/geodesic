@@ -22,6 +22,19 @@ Here is an example to compute the distance between two points (the poles in this
 
 and that's it.
 
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+## Table of Contents
+
+- [Installation](#installation)
+  - [Swift Package Manager](#swift-package-manager)
+- [Implementation Details](#implementation-details)
+- [Convergence and Tolerance](#convergence-and-tolerance)
+- [WGS 84 and other Ellipsoids](#wgs-84-and-other-ellipsoids)
+- [Known Issues](#known-issues)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
 ## Installation
 
 At least `clang-3.6` is required. On linux one might need to install it explicitly. There are no dependencies on macOS.
