@@ -26,8 +26,8 @@ public func distance(_ x: (lat: Double, lon: Double),
 ) -> Double {
 
     // validate lat and lon values
-    assert(x.lat >= -Double.pi / 2 && x.lat <= Double.pi / 2, "x.lat '\(x.lat)' outside [-π/2, π]")
-    assert(y.lat >= -Double.pi / 2 && y.lat <= Double.pi / 2, "y.lat '\(y.lat)' outside [-π/2, π]")
+    assert(x.lat >= -Double.pi / 2 && x.lat <= Double.pi / 2, "x.lat '\(x.lat)' outside [-π/2, π/2]")
+    assert(y.lat >= -Double.pi / 2 && y.lat <= Double.pi / 2, "y.lat '\(y.lat)' outside [-π/2, π/2]")
     assert(x.lon >= -Double.pi && x.lon <= Double.pi, "x.lon '\(y.lon)' outside [-π, π]")
     assert(y.lon >= -Double.pi && y.lon <= Double.pi, "y.lon '\(y.lon)' outside [-π, π]")
 
