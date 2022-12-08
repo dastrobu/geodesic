@@ -1,9 +1,9 @@
 # geodesic
 
-[![Swift Version](https://img.shields.io/badge/swift-5.5-blue.svg)](https://swift.org)
+[![Swift Version](https://img.shields.io/badge/swift-5.7-blue.svg)](https://swift.org)
 ![Platform](https://img.shields.io/badge/platform-macOS|linux--64-lightgray.svg)
 ![Build](https://github.com/dastrobu/geodesic/actions/workflows/ci.yaml/badge.svg)
-[![GeographicLib Version](https://img.shields.io/badge/GeographicLib-1.52.0-blue.svg)](https://geographiclib.sourceforge.io/)
+[![GeographicLib Version](https://img.shields.io/badge/GeographicLib-2.0-blue.svg)](https://github.com/geographiclib/geographiclib-c/releases/tag/v2.0)
 
 Solver for the inverse geodesic problem in Swift.
 
@@ -54,7 +54,7 @@ let package = Package(
 This Swift package is a wrapper for the
 [C library for Geodesics](https://geographiclib.sourceforge.io/html/C/). The author of this library is Charles Karney (
 charles@karney.com). The goal of this Swift package is to make some algorithms from
-[GeographicLib](https://geographiclib.sourceforge.io/) available to the Swift world. Alternatively one can employ the
+[GeographicLib](https://github.com/geographiclib/geographiclib-c) available to the Swift world. Alternatively one can employ the
 package
 [vincenty](https://github.com/dastrobu/vincenty)
 which is a much simpler solver for the inverse geodesic problem, completely written in Swift. Vincenty's formulae does,
