@@ -71,8 +71,10 @@ By default the
 is employed, but different parameters can be specified, e.g. for the
 [GRS 80 ellipsoid](https://en.wikipedia.org/wiki/GRS_80).
 
-    distance((lat: Double.pi / 2, lon: 0), (lat: -Double.pi / 2, lon: 0), 
-             ellipsoid (a: 6378137.0, f: 1/298.257222100882711))
+```swift
+distance((lat: Double.pi / 2, lon: 0), (lat: -Double.pi / 2, lon: 0), 
+            ellipsoid (a: 6378137.0, f: 1/298.257222100882711))
+```
 
 ## Known Issues
 
