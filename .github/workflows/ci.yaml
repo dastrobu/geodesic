@@ -12,11 +12,13 @@ jobs:
     strategy:
       matrix:
         swift-version:
-          - "5.9"
+          - "6.2"
+          - "6.1"
+          - "6.0"
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: swift-actions/setup-swift@v1
+      - uses: swift-actions/setup-swift@v3
         with:
           swift-version: ${{ matrix.swift-version }}
       - run: swift test
@@ -24,6 +26,9 @@ jobs:
     strategy:
       matrix:
         swift-version:
+          - "6.2"
+          - "6.1"
+          - "6.0"
           - "5.9"
           - "5.8"
           - "5.7"
@@ -38,7 +43,7 @@ jobs:
     container:
       image: swift:${{ matrix.swift-version }}
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - run: swift test
   ios-build:
     runs-on: macos-latest
