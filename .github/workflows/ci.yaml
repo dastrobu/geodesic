@@ -14,7 +14,6 @@ jobs:
         swift-version:
           - "6.2"
           - "6.1"
-          - "6.0"
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
@@ -28,17 +27,6 @@ jobs:
         swift-version:
           - "6.2"
           - "6.1"
-          - "6.0"
-          - "5.9"
-          - "5.8"
-          - "5.7"
-          - "5.6"
-          - "5.5"
-          - "5.4"
-          - "5.3"
-          - "5.2"
-          - "5.1"
-          - "5.0"
     runs-on: ubuntu-latest
     container:
       image: swift:${{ matrix.swift-version }}
@@ -49,4 +37,4 @@ jobs:
     runs-on: macos-latest
     steps:
       - uses: actions/checkout@v4
-      - run: xcodebuild -scheme geodesic -destination 'platform=iOS Simulator,name=iPhone 13'
+      - run: xcodebuild -scheme geodesic -destination 'platform=iOS Simulator,name=iPhone 16'

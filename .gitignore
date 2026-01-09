@@ -8,3 +8,4 @@
 DerivedData/
 
 **.log
+.DS_Store
