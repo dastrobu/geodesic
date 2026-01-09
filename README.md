@@ -46,7 +46,7 @@ At least `clang-3.6` is required. On linux one might need to install it explicit
 ```swift
 let package = Package(
     dependencies: [
-        .package(url: "https://github.com/dastrobu/geodesic.git", from: "1.4.0"),
+        .package(url: "https://github.com/dastrobu/geodesic.git", from: "1.5.0"),
     ]
 )
 ```
